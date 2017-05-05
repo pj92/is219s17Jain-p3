@@ -97,9 +97,9 @@ app.controller('HomeController', ['$scope', function($scope) {
 
 
 	/* ADD VARIABLES FOR STEP 3 HERE */
-+$scope.title = "IMDB + Palash's Top 8 Movies";
-+$scope.owner = "Palash Jain";
-+$scope.github = "https://github.com/pj92/is219s17Jain-p3";
+	$scope.title = "IMDB + Palash's Top 8 Movies";
+	$scope.owner = "Palash Jain";
+	$scope.github = "https://github.com/pj92/is219s17Jain-p3";
 
 
 
@@ -109,6 +109,28 @@ app.controller('HomeController', ['$scope', function($scope) {
 
 	/* ADD FUNCTIONS FOR STEP 7 HERE */
 
+	$scope.like = function(index){
+		$scope.movies[index].likes++;
+	};
+	$scope.dislike = function(index){
+		$scope.movies[index].dislikes--;
+	};
+	$scope.posterClick = function(index){
+		if($scope.movies[index].posterindex < ($scope.movies[index].posters.length - 1)){
+			$scope.movies[index].posterindex++;
+		}
+		else{
+			$scope.movies[index].posterindex = 0;
+		}
+	};
+
+	$scope.timeText= function(minutes){
+ 			$scope.hours= Math.round(minutes/ 60) ;
+ 			$scope.minutes= minutes %60;
+
+ 			return $scope.hours + 'h ' + $scope.minutes + 'm'
+
+ 	};
 
 
 
