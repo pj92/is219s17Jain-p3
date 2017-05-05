@@ -88,8 +88,52 @@ app.controller('HomeController', ['$scope', function($scope) {
       likes:	812,
       dislikes:	101,
       posterindex: 0
-	}
+	},
 
+	{
+		title:	'Spectre',
+		iscore:	6.9,
+		rating:	'PG-13',
+		runtime:	148,
+		released:	new Date('2015', '11', '06'),
+		country:	'UK/USA',
+		posters:	['img/spectre1.jpg','img/spectre2.png'],
+		imdb:		'http://www.imdb.com/title/tt2379713/?ref_=nv_sr_2',
+		website:	'http://www.sonypictures.com/movies/spectre/',
+		likes:	1254,
+		dislikes:	495,
+		posterindex: 0
+},
+
+	{
+		title:	'Deadpool',
+		iscore:	8.0,
+		rating:	'R',
+		runtime:	108,
+		released:	new Date('2016', '02', '12'),
+		country:	'USA',
+		posters:	['img/deadpool1.jpg','img/deadpool2.png'],
+		imdb:		'http://www.imdb.com/title/tt1431045/',
+		website:	'http://www.foxmovies.com/movies/deadpool',
+		likes:	1435,
+		dislikes:	389,
+		posterindex: 0
+},
+
+	{
+		title:	'Suicide Squad',
+		iscore:	6.3,
+		rating:	'PG-13',
+		runtime:	123,
+		released:	new Date('2016', '08', '05'),
+		country:	'USA',
+		posters:	['img/suicide1.jpg','img/suicide2.jpg'],
+		imdb:		'http://www.imdb.com/title/tt1386697/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=2240084082&pf_rd_r=05JTFQ5AVDG87KDDMV2D&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=moviemeter&ref_=chtmvm_tt_18',
+		website:	'http://www.suicidesquad.com/',
+		likes:	764,
+		dislikes:	243,
+		posterindex: 0
+}
 
   ];
 
